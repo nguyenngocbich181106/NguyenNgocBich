@@ -7,7 +7,7 @@ struct File {
     float size;
     int time;
 };
-
+ 
 struct Node {
     File data;
     Node* next;
