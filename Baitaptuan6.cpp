@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cstring>
 using namespace std;
-
+// cau truc File
 struct File {
     char name[100];
     float size;
@@ -12,7 +12,7 @@ struct Node {
     File data;
     Node* next;
 };
-
+// tao node
 Node* createNode(File f) {
     Node* node = new Node;
     node->data = f;
@@ -38,7 +38,7 @@ void insertSorted(Node*& head, File f) {
     node->next = cur->next;
     cur->next = node;
 }
-
+//hien thi danh sach
 void display(Node* head) {
     while (head != NULL) {
         cout << head->data.name << " | "
@@ -47,7 +47,7 @@ void display(Node* head) {
         head = head->next;
     }
 }
-
+//tinh tong dung luong
 float totalSize(Node* head) {
     float sum = 0;
     while (head != NULL) {
