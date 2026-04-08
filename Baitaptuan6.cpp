@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cstring>
 using namespace std;
-//hi
+
 struct File {
     char name[100];
     float size;
